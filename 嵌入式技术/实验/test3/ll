@@ -1,0 +1,4 @@
+#!/bin/sh 
+insmod  /sdcard/test3/driver_key.ko
+cd sdcard/test3/
+./app_key
