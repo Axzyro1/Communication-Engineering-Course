@@ -1,0 +1,6 @@
+#!/bin/sh 
+insmod  /sdcard/test4/driver_key.ko
+insmod  /sdcard/test4/led.ko
+mknod  /dev/my_led c 240 0
+cd sdcard/test4/
+./test
