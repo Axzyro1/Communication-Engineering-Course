@@ -1,0 +1,13 @@
+clear
+clc
+x=0:1:10;
+y=x;
+for i=1:length(x);
+    SNR=x(i);
+    sim('untitled.slx');
+    y(i)=mean(simout);
+end
+plot(x,y,'-p');
+xlabel('输入信噪比');
+ylabel('输出信噪比');
+grid on;
