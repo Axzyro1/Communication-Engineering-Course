@@ -1,0 +1,1 @@
+#define format_area "area=%f\n"
