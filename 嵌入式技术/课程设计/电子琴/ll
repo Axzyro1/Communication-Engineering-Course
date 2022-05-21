@@ -1,0 +1,4 @@
+#!/bin/sh 
+insmod key.ko
+insmod pwm.ko
+./test
