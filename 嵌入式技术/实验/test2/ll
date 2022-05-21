@@ -1,0 +1,4 @@
+#!/bin/sh 
+insmod  /sdcard/test2/led.ko
+mknod  /dev/my_led  c  240  0
+./sdcard/test2/test
