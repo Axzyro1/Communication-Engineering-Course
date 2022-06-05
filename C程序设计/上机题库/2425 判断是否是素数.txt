@@ -1,0 +1,19 @@
+2425 Problem H ≈–∂œ «∑Ò «Àÿ ˝ 
+#include<stdio.h>
+int main()
+{
+int a,i=1;
+while(scanf("%d",&a)!=EOF)
+if(a==1)
+  printf("No\n"); 
+else
+ {
+  for(i=2;i<a;i++)
+  if(a%i==0)
+  break;
+  if(a==i)
+  printf("Yes\n");
+  else
+  printf("No\n");
+ }
+}

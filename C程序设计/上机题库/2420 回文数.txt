@@ -1,0 +1,17 @@
+2420 Problem H 回文数——C语言初学者百题大战之二十一 
+#include <stdio.h>
+int main()
+{
+long int x;
+int a,b,c,d,e;
+scanf("%ld",&x);
+a=x/10000;
+b=x/1000%10;
+c=x/100%10;
+d=x/10%10;
+e=x%10;
+if(a==e&&b==d)
+printf("Yes\n");
+else
+printf("No\n");
+}

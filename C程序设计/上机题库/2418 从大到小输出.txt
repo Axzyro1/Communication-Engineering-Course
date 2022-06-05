@@ -1,0 +1,16 @@
+2418 Problem F 从大到小输出——C语言初学者百题大战之十九 
+#include <stdio.h>
+int main()
+{
+int x,y,z,m;
+scanf("%d%d%d",&x,&y,&z);
+if (x<y)
+m=x,x=y,y=m;
+if (y<z)
+m=y,y=z,z=m;
+if (x<z)
+m=x,x=z,z=m;
+if (x<y)
+m=x,x=y,y=m;
+printf("%d %d %d\n",x,y,z);
+}

@@ -1,0 +1,10 @@
+2410 Problem I 你今天喝了多少水？——C语言初学者百题大战之十一 
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+float x,y,m;
+scanf("%f%f",&x,&y);
+m=3.14*x*x*y;
+printf("%.2f\n",m);
+}

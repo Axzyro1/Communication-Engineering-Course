@@ -1,0 +1,52 @@
+2414 Problem A 求方程的解——C语言初学者百题大战之十五 
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float a,b,c,x1,x2,delt;
+scanf("%f%f%f",&a,&b,&c);
+  if (a==0)
+  {
+    if (b==0)
+    {
+    printf("No");
+    }
+    else
+    {
+    x1=-c/b;
+    printf("%.6f\n",x1);
+    }
+  }
+  else
+  {
+  delt=b*b-4*a*c;
+    if (delt<0)
+    {
+    printf("No");
+    }
+    else
+    {
+       if (delt==0)
+       {
+       x1 = (-b) / (2*a);
+       printf("%.6f\n",x1);
+       }
+       else
+       {
+       x1 = ( -b + sqrt(delt) ) / (2*a);
+       x2 = ( -b - sqrt(delt) ) / (2*a);
+           if (x1>x2)
+           {
+           printf("%.6f\n",x1);
+           printf("%.6f\n",x2);
+           }
+           else
+           {
+           printf("%.6f\n",x2);
+           printf("%.6f\n",x1);
+           }
+       }
+    }
+  }
+}
+ 

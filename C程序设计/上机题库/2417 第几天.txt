@@ -1,0 +1,25 @@
+2417 Problem E 第几天——C语言初学者百题大战之十八 
+#include<stdio.h>
+int main()
+{
+    int i,j,year,month,day,MONTH[12]={31,28,31,30,31,30,31,31,30,31,30,31},D;
+    while(scanf("%d-%d-%d",&year,&month,&day)!=EOF)
+    {
+    if((year%4==0&&year%100!=0)||year%400==0)
+    {
+        MONTH[1]=29;
+    }
+    D=0;
+    for(i=0;i<month-1;i++)
+    {
+        D+=MONTH[i];
+    }
+    if(day<=MONTH[i])
+    {
+	D=D+day;
+    printf("%d\n",D);
+	}
+    else
+    printf("No\n");
+    }
+}
