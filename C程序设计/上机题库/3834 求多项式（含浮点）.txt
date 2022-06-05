@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+int n,i,j;
+float s,m,f;
+scanf("%d",&n);
+s=0.0;m=0;f=1;
+for(i=1;i<=n;i++)
+{
+ m=0;j=1;f=1;
+while(j<=2*i-1)
+{
+  m=m+j*f;
+  f=-f;
+  j=j+2;
+}
+ s=s+1/m;
+}
+printf("%.2f\n",s);
+}

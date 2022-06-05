@@ -1,0 +1,11 @@
+3811 Problem J 零起点学算法12——求2个日期之间的天数 
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+int a,b,c,d,e,f,s;
+scanf("%d-%d-%d",&a,&b,&c);
+scanf("%d-%d-%d",&d,&e,&f);
+printf("%d\n",f-c-1);
+}
+ 

@@ -1,0 +1,7 @@
+3806 Problem G 零起点学算法07——复杂一点的表达式计算 
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+printf("%.2f\n",1+sqrt(3.0)/(4-2.1));
+}

@@ -1,0 +1,14 @@
+3839 Problem J 零起点学算法38——多组测试数据（a+b)II 
+#include<stdio.h>
+int main()
+{
+  int a,b,n,i=1;
+  while(scanf("%d",&n)!=EOF)
+  {
+  	for(i=1;i<=n;i++)
+  	{
+	  	scanf("%d%d",&a,&b);
+	  	printf("%d\n",a+b);
+	  }
+  }
+}

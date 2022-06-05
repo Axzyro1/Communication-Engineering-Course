@@ -1,0 +1,10 @@
+3808 Problem B 零起点学算法09——继续练习简单的输入和计算（a-b) 
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b;
+scanf("%d%d",&a,&b);
+printf("%d\n",a-b);
+}
+ 

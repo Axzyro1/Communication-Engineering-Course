@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+int a=92,b=110;
+printf("%c%c\n",a,b);
+}

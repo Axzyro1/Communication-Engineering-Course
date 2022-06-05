@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define N 100 
+int main() 
+{ 
+int i,j,t,n,a[N],b,c,d;  
+scanf("%d",&t);
+for(i=0;i<t;i++)
+{
+scanf("%d",&n);
+for(j=0;j<n;j++)
+{scanf("%d",&a[j]);}
+for(c=a[0];c++;)
+{
+for(b=0;b<n;b++)
+{
+if(c%a[b]!=0)
+{break;}
+}
+if(b==n)
+{break;}	
+}
+printf("%d\n",c);
+} 
+}

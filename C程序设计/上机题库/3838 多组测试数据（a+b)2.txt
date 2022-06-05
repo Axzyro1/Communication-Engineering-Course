@@ -1,0 +1,10 @@
+3838 Problem I 零起点学算法37——多组测试数据（a+b) 
+#include<stdio.h>
+int main()
+{
+   int a,b,s;
+   while(scanf("%d%d",&a,&b)!=EOF)     {
+    s=a+b;
+    printf("%d\n",s);
+    }
+} 

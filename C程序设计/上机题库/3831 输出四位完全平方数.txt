@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+int a,b,c,d,i,x;
+for(i=1;i<100;i++)
+{
+x=i*i;
+a=x/1000;
+b=x%1000/100;
+c=x%1000%100/10;
+d=x%1000%100%10;
+if(a==b&&c==d)
+printf("%d\n",x);
+}
+}

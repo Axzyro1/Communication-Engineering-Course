@@ -1,0 +1,11 @@
+3809 Problem C 零起点学算法10——求圆柱体的表面积 
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+const double pi=4.0 * atan(1.0);      
+float r,h,s;
+scanf("%f%f",&r,&h);
+s= pi*r*r*2+pi*r*h*2;
+printf("Area=%.3f\n",s);
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char s[100];
+    int n,i,l;
+    scanf("%d",&n);
+    getchar();
+    while(n--)
+    {
+        
+        gets(s);
+        l=strlen(s);
+        for(i=0;i<l;i++)
+        {
+        	printf("%c",s[i]);
+        }
+        if(s[l-1]=='y'||s[l-1]=='s'||s[l-1]=='x'||s[l-1]=='h'&&(s[l-2]=='s'||s[l-2]=='c')||s[l-1]=='o')
+        printf("es\n");
+        else
+		printf("s\n");
+    }
+}

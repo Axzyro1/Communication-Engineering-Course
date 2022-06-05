@@ -1,0 +1,28 @@
+float n,i,H,D,V,t1,t2;
+    scanf("%d",&n);
+看到了吧，你定义的n是个float型，而你输入时用的是 %d 不对应，
+所以就不对了。还有既然是循环，就应该把 i 和 n 定义成 int型。
+
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	float m,H,D,V,t1,t2;
+	int i,n;
+	scanf("%d",&n);
+	while(n-->0)
+	{	
+	t1=t2=0;
+	scanf("%f%f%f",&H,&D,&V);
+    {
+	t1=sqrt(2*H/11.1);
+	t2=D/V;
+	if(t2>=t1)
+	{printf("NO\n");}
+	else
+	{printf("YES\n");}
+    }
+	}
+}

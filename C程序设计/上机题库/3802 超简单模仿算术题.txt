@@ -1,0 +1,6 @@
+3802 Problem C 零起点学算法03——超简单模仿算术题 
+#include<stdio.h>
+int main()
+{
+printf("%d\n",10-7);
+}

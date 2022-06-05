@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+int a,b,s;
+scanf("%d%d",&a,&b);
+s=1500+(a+b)*5;
+if(s<1600)
+{printf("D\n");}
+if(s>=1600&&s<1699)
+{printf("C\n");}
+if(s>=1700&&s<1799)
+{printf("B\n");}
+if(s>=1800)
+{printf("A\n");}
+} 

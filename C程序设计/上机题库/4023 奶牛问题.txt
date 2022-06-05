@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int a[55],i,n,k;
+    while(scanf("%d",&n)!=EOF&&n!=0)
+    {
+        for (i=0;i<n;i++)
+        {
+            if (i<4)
+            {
+                a[i]=i+1;
+                k=a[i];
+            }
+            
+            else
+            {
+                a[i] = a[i-1]+a[i-3];
+                k=a[i];
+            }
+        }
+        printf("%d\n",k);
+    }
+        return 0;
+}

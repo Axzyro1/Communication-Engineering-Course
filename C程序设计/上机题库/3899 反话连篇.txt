@@ -1,0 +1,17 @@
+3899 Problem H 零起点学算法98——反话连篇 
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char c[1000];
+    int len, i;
+   while(gets(c)!=NULL)
+    {
+    len = strlen(c);
+    for (i = len-1; i>=0; i--)
+    {
+        printf("%c", c[i]);
+    }
+     printf("\n");
+    }
+}
