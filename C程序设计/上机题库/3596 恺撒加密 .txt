@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char str[80];
+    int len,i,j;
+    while(gets(str)!=NULL)
+    {
+		len=strlen(str);
+        for (i=0;i<len;i++)
+        {
+            if(str[i]>='v'&&str[i]<='z'||str[i]>='V'&&str[i]<='Z')
+            {printf("%c",str[i]-21);}
+              else
+               {
+        	    if((str[i]>='a'&&str[i]<='u')||(str[i]>='A'&&str[i]<='U'))
+        	    {printf("%c",str[i]+5);}
+        	    else
+        	    {printf("%c",str[i]);}
+     	      }
+       	}
+        printf("\n");
+  }
+}

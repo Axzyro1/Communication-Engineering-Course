@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{ float y=1.05; int n=1,p;
+  while((pow(y,n)<1e6))
+     {
+	 n++;
+	 }
+	 n--;
+	 printf("%d,%.0f",n,pow(1.05,n));
+  return 0; 
+}

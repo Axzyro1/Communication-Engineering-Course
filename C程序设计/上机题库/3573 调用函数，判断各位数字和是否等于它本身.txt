@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int factorsum(int x);
+	int n,m,i;
+    while(scanf("%d %d",&m,&n)!=EOF)
+		{	
+		  for(i=m;i<n;i++)
+		  if(factorsum(i)!=0)
+		  {printf("%d ",factorsum(i));}	
+		  printf("\n");
+		}
+}
+int factorsum(int x)
+{
+	int a,b,c,d,y;
+	a=x/1000;
+    b=x%1000/100;
+    c=x%1000%100/10;
+    d=x%1000%100%10;
+    y=a*a*a+b*b*b+c*c*c+d*d*d;
+    if(y==x){return x;}
+	else return 0;
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,year,t,n;
+	float s;
+	while(scanf("%d",&n)!=EOF)
+	{
+	s=13.076;
+	t=(n-2005);
+	for(i=1;i<=t;i++)
+	{
+    s=s*(1+0.00589);
+    }
+    printf("%.3f\n",s);
+	}
+ }

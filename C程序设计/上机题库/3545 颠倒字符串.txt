@@ -1,0 +1,17 @@
+3545 µßµ¹×Ö·û´® 
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char c[80];
+    int len, i;
+   while(gets(c)!=NULL)
+    {
+    len = strlen(c);
+    for (i = len-1; i>=0; i--)
+    {
+        printf("%c", c[i]);
+    }
+     printf("\n");
+    }
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define N 80
+#include <string.h>
+int main()
+{
+int i,j,l,a,k;
+char s[N];
+while(gets(s)!=NULL)
+{
+     a=0;
+     l=strlen(s);
+     for(i=0,j=l-1;*(s+i)!='\0';i++,j--)
+     {
+       if(*(s+i)==*(s+j))
+       {
+         a++;
+       }
+     }
+     if(a==l)
+     printf("Yes\n");
+     else
+     printf("No\n");
+     }
+}

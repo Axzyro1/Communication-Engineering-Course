@@ -1,0 +1,20 @@
+#include <stdio.h>
+main()
+{
+ float f(float x,float y); 
+ float min;
+  int x,y,x1,y1;
+  min=f(1,1);x1=1;y1=1;
+  for(x=1;x<=6;x++)
+  {
+  for(y=1;y<=6;y++)
+   {
+   if(min>f(x,y))  {min=f(x,y);x1=x;y1=y;}
+   }
+  }
+ printf("%d %d",x1,y1);
+}
+float f(float x,float y)
+{ 
+return (3.14*x-y)/(x+y); 
+}

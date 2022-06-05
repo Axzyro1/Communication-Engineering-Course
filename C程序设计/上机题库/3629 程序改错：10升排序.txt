@@ -1,0 +1,23 @@
+#include "stdio.h" 
+#define N 10 
+int main() 
+{ 
+int i,j,min,temp; 
+int a[N]={5,4,3,2,1,9,8,7,6,0}; 
+printf("\nThe array is:\n"); /* 输出数组元素 */ 
+for (i=0;i<N;i++)
+printf("%5d",a[i]); 
+for (i=0;i<N-1;i++)
+{ 
+min = i; 
+for (j=i+1; j<N;j++)
+ /****** 1 ******/ 
+if (a[min]>=a[j]){ 
+/****** 2 ******/ 
+temp=a[min]; a[min]=a[j]; a[j]=temp;} /* 数据交换 */ 
+} 
+printf("\nThe sorted numbers: \n"); /* 输出排序结果 */ 
+for (i=0;i<N;i++)
+ printf("%5d",a[i]); 
+printf("\n"); 
+} 

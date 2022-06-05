@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+void main()
+{  char str[256];
+  int i,j,k=0,n;
+  gets(str);
+  n=strlen(str);
+  for(i=0;i<n;i++)
+  /********1********/
+  if ((str[i]>='a'&&str[i]<='z')||(str[i]>='A'&&str[i]<='Z'))
+  {
+      str[k]=str[i]; k++;
+  }
+  str[k]='\0';
+  printf("%s\n",str);
+}

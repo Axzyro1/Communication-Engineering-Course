@@ -1,0 +1,27 @@
+ 3528 Problem L Êä³öÊý×Ö
+ #include <stdio.h>
+int main()
+{
+	long a;
+	int b[50],n,i;
+	while(scanf("%ld",&a)!=EOF)
+	{
+		if(a<0)
+		a=-a;
+	i=0;
+	while(a>9)
+	{
+		b[i]=a%10;
+		a/=10;
+		i++;
+	}
+	b[i]=a;
+	for(;i>=0;i--)
+	{
+		printf("%d",b[i]);
+		if(i!=0)
+			printf(",");
+	}
+		printf("\n");
+	}
+}

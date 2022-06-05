@@ -1,0 +1,20 @@
+3509 Problem E 计算数列和 
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+	int n,t,a;
+	float i,j,sum;
+while(scanf("%d",&n)!=EOF)
+{
+    i=1;j=2;sum=0;
+	for(a=1;a<=n;a++)
+	{
+	sum+=(j/i);
+	t=i;
+	i=j;
+	j=t+j;
+	}
+	printf("s=%.2f\n",sum);
+}
+}

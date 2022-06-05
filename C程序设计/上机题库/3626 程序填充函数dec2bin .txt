@@ -1,0 +1,18 @@
+#include "stdio.h"
+void Dec2Bin(int m)
+{
+int bin[32],j;
+for(j=0;m!=0;j++)
+{
+bin[j]= m%2;
+m=m/2;
+}
+for(;j!=0;j--)
+printf("%d",bin[j-1]);
+}
+void main()
+{
+int n;
+scanf("%d",&n);
+Dec2Bin(n);
+}

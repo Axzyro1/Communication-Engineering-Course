@@ -1,0 +1,16 @@
+3508 Problem F 求最大公约数 
+#include<stdio.h>
+int main()
+{
+ int a,b,i;
+ scanf("%d,%d",&a,&b);
+ if(a>b)
+ i=b;
+ else
+ i=a;
+ while(a%i!=0||b%i!=0)
+ {
+ i--;
+ }
+ printf("%d\n",i);
+} 

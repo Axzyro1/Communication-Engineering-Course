@@ -1,0 +1,28 @@
+#include<stdio.h>
+#define N 10
+struct student
+{
+	char name[10][N];
+	int number[5],score[5],min,max;
+};
+main()
+{
+struct student a;
+	int i,j,n,min,max;
+	scanf("%d",&n);
+    min=max=0;
+	for(j=0;j<n;j++)
+	{
+	  scanf("%d%s%d",&a.number[j],a.name[j],&a.score[j]);
+	  if(a.score[min]>a.score[j])
+	  {
+	   min=j;
+      }
+      if(a.score[max]<a.score[j])
+	  {
+	   max=j;
+      }
+	}
+	printf("%d %s %d\n",a.number[max],a.name[max],a.score[max]);
+	printf("%d %s %d\n",a.number[min],a.name[min],a.score[min]);
+}

@@ -1,0 +1,39 @@
+#include<stdio.h>
+#define N 100
+#include<math.h>
+int main()
+{
+int i,j,k,n,t;
+int a[N],b[N];
+while(scanf("%d",&n)!=EOF)
+{
+j=0;
+for(i=0;i<n;i++)	
+{
+scanf("%d",&a[i]);
+if(a[i]%2==0)
+{
+b[j]=a[i];
+j++;
+}
+}
+     for(i=0;i<j-1;i++)
+		{
+              for(k=0;k<j-i-1;k++)
+			{
+				if (b[k]<b[k+1])
+				{
+				t=b[k];
+				b[k]=b[k+1];
+				b[k+1]=t;
+				}
+			}
+		}
+		for(i=0;i<j;i++)
+		{
+		
+		printf("%d ",b[i]);
+		}
+		printf("\n");
+	}
+}

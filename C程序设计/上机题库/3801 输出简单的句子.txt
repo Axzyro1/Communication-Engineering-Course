@@ -1,0 +1,6 @@
+3801 Problem B 零起点学算法02——输出简单的句子 
+#include<stdio.h>
+int main()
+{
+printf("Nice to meet you!\n");
+}

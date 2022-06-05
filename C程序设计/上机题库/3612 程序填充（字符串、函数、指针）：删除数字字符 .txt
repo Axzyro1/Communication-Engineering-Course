@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+void f(char *s)
+{ int i=0;
+  while(s[i]!='\0'){
+    if(isdigit(s[i])) strcpy(s+i,s+i+1);
+    else  i++;}
+}
+void main()
+{ char str[80];
+  gets(str); f(str); puts(str);
+}

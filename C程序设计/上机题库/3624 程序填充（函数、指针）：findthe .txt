@@ -1,0 +1,20 @@
+#include "stdio.h" 
+int find(char *str) 
+{ 
+char *fstr="the"; 
+int i=0,j,n=0; 
+while (str[i]!='\0') 
+{ 
+for(j=0;j<3;j++) 
+{if (str[j+i]!=fstr[j]) break; 
+if (j==2) n++;} 
+i++; 
+} 
+return n; 
+} 
+
+main() 
+{ char a[80]; 
+gets(a); 
+printf("%d",find(a)); 
+}

@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main()
+{int m,n,k;
+while(scanf("%d%d",&m,&n)!=EOF&&m<=0||n<=0);
+{for(k=m; n%k!=0||m%k!=0; k--);
+ printf("%d\n",k);
+}
+}
