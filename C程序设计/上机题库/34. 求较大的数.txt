@@ -1,0 +1,12 @@
+2406 Problem E 求较大的数——C语言初学者百题大战之七 
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b;
+scanf("%d%d",&a,&b);
+if(a>b)
+printf("%d\n",a);
+else
+printf("%d\n",b);
+}

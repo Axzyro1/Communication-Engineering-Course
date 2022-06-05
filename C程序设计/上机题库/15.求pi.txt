@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+	int d,f;
+	double i,pi;
+	f=1;
+	d=1;
+	i=1.0;
+	pi=0;
+while(fabs(i)>=0.0001){
+	i=f*1.0/d;
+	pi=pi+i;
+	f=-f;
+	d=d+2;
+	}
+	pi=pi*4;
+	printf("pi=%.4f\n",pi);
+	return 0;
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+	int i,n;
+	double power;
+	printf("enter n:");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		power=pow(2,i);
+		printf("%0f\n",power);
+	}
+	return 0;
+	}

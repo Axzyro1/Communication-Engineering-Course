@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(void)
+{
+	int count,i,n;
+	double grade,total;
+	printf("Enter n:");
+	scanf("%d",&n);
+	count=0;
+	total=0;
+	for(i=1;i<=n;i++){
+		printf("enter grade #%d;",i);
+		scanf("%lf",&grade);
+		total=total+grade;
+		if(grade<60){
+			count++;
+	   }
+	}
+	printf("grade average=%.2f\n",total/n);
+	printf("number of failures=%d\n",count);
+	return 0;
+}

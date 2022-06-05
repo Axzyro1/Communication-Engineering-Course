@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(void)
+{
+	int num;
+	double grade,total;
+	num=0;
+	total=0;
+	printf("enter grades:");
+	scanf("%lf",&grade);
+while(grade>=0){
+	total=total+grade;
+	num++;
+	scanf("%lf",&grade);
+	}
+	if(num!=0)
+	printf("grade average is%.2f\n",total/num);
+	else
+	printf("grade average is0\n");
+	return 0;
+}
