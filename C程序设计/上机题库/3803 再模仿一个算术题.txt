@@ -1,6 +1,0 @@
-3803 Problem D 零起点学算法04——再模仿一个算术题 
-#include<stdio.h>
-int main()
-{
-printf("%d\n",10*7);
-}

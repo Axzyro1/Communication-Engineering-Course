@@ -1,6 +1,0 @@
-3804 Problem E 零起点学算法05——除法算术题 
-#include<stdio.h>
-int main()
-{
-printf("%d\n",12/2);
-}

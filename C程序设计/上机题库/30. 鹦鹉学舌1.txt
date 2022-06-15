@@ -1,9 +1,0 @@
-2402 Problem I 鹦鹉学舌1——C语言初学者百题大战之三 
-#include<stdio.h>
-int main()
-{
-int a;
-scanf("%d",&a);
-printf("%d\n",a);
-}
- 

@@ -1,6 +1,0 @@
-3805 Problem F 零起点学算法06——再来一题除法算术题 
-#include<stdio.h>
-int main()
-{
-printf("%.1f\n",8.0/5);
-}

@@ -1,8 +1,0 @@
-2404 Problem K a - b ——C语言初学者百题大战之五
-#include<stdio.h>
-int main()
-{
-int a,b;
-scanf("%d,%d",&a,&b);
-printf("%d\n",a-b);
-} 
